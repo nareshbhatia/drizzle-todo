@@ -1,0 +1,38 @@
+{
+  "name": "drizzle-todo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "clean": "rimraf .next next-env.d.ts node_modules",
+    "dev": "next dev",
+    "fix": "run-s _lint:fix _format:fix",
+    "lint": "run-s _lint _format",
+    "start": "next start",
+    "_format": "prettier --list-different '*.{js,ts,json,md}' 'src/**/*.{css,js,jsx,ts,tsx,json,md}'",
+    "_format:fix": "npm run _format -- --write",
+    "_lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "_lint:fix": "npm run _lint -- --fix"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@code-shaper/eslint-config": "^1.*",
+    "@dword-design/eslint-plugin-import-alias": "^5.0.0",
+    "@types/node": "^20.14.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.3"
+  }
+}
