@@ -13,6 +13,8 @@ Demonstrates how to use Drizzle with Next.js.
 
 ## Development Build
 
+Copy .env.example to .env.local and set the DATABASE_URL environment variable.
+
 ```shell
 npm ci
 npm run dev
