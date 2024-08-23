@@ -5,7 +5,7 @@ Demonstrates how to use Drizzle with Next.js.
 **Tech Stack**
 
 1. Framework: React 18 + Next.js
-2. Styling: Plain CSS
+2. Styling: Tailwind CSS
 3. Linting: Code Shaper ESLint configuration
 4. Database: PostgreSQL with Drizzle
 
